@@ -6,8 +6,8 @@
  
  body {
   font-family: Arial, sans-serif;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: rgb(196, 176, 147);
  }
  
@@ -52,15 +52,13 @@
  
  main {
   display: flex;
-  width: 100%;
-  height: 100%;
   align-items: center;
   flex-direction: column;
   background-color: rgb(196, 176, 147);
  }
  
  main img {
-  width: 150px;
+  width: 30rem;
 
  }
  
@@ -73,7 +71,6 @@
  
  h2 {
   display: flex;
-  width: 100vw;
   justify-content: center;
   font-size: 30px;
   font-family:'Courier New', Courier, monospace;
@@ -83,12 +80,19 @@
  article {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   width: 60%;
  }
  
  article h3 {
   font-size: 18px;
+ }
+
+ .article_title_rules{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
  }
 
  .article_rules{
@@ -100,6 +104,26 @@
  .article_rules > h3 {
   padding-bottom: 10px;
 }
+
+.div_upcoming{
+  justify-content: ;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4rem;
+}
+
+.div_about{
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4rem;
+  width: 70%;
+}
+
+ .article_registration{
+  display: flex;
+  align-items: center;
+ }
 
  article p {
   font-size: 16px;
@@ -125,6 +149,11 @@
   font-weight: bold;
  }
 
+ .table{
+  display: flex;
+  align-items: center;
+ }
+
  td{
   padding: 0.5rem;
   border: #2a9d8f solid 0.1rem;
@@ -132,4 +161,79 @@
  
  .p-g-i{
   padding-top: 1rem;
+ }
+
+ .form_registration-1{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  border-radius: 2rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 30rem;
+  border: none;
+ }
+
+ .form_registration{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  border-radius: 2rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 30rem;
+ }
+
+ .form_registration_grade{
+  display: flex;
+  background-color: aqua;
+  border-radius: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+  width: 30rem;
+ }
+
+ .form_registration_gender{
+  display: flex;
+  background-color: aqua;
+  border-radius: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+  width: 30rem;
+ }
+
+ .form_registration_4{
+  display: flex;
+  background-color: aqua;
+  border-radius: 2rem;
+  padding: 1rem;
+  gap: 1rem;
+  width: 30rem;
+ }
+
+ .h3_registration{
+  font-size:15px;
+ }
+
+ .h2_maps{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+ }
+
+ .div_maps{
+  border: #2a9d8f 2px solid;
+  padding: 0.5rem;
+  background-color: blanchedalmond;
+ }
+ 
+ .h3_maps{
+  padding-bottom: 1rem;
+ }
+
+ .maps{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
  }
